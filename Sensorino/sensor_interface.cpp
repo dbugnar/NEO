@@ -42,7 +42,7 @@ int get_omron()
 
 void get_whiteline_array(int *sensor_values)
 {
-	qtr_read(sensor_values);
+	qtr_read((unsigned int*)sensor_values);
 
 	// Coerce the int values returned by qtr_read to a HIGH/LOW domain by using a experimental threshold.
 	sensor_values[WHITELINE_FRONT_LEFT] = (unsigned int)sensor_values[WHITELINE_FRONT_LEFT] < WHITELINE_THRESHOLD ? HIGH : LOW;

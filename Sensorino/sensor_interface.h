@@ -7,10 +7,10 @@
 #define WHITELINE_FRONT_RIGHT_PIN   A1
 #define WHITELINE_REAR_LEFT_PIN     A2
 #define WHITELINE_REAR_RIGHT_PIN    A3
-#define KEYENCE_LEFT_PIN            D9
-#define KEYENCE_CENTER_PIN          D10
-#define KEYENCE_RIGHT_PIN           D11
-#define OMRON_PIN                   MISO  // TODO: replace with actual pin number
+#define KEYENCE_LEFT_PIN            9U		// D9
+#define KEYENCE_CENTER_PIN          10U		// D10
+#define KEYENCE_RIGHT_PIN           11U		// D11
+#define OMRON_PIN                   14U		// MISO
 
 #define KEYENCE_LEFT    0
 #define KEYENCE_CENTER  1

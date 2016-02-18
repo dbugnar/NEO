@@ -3,14 +3,14 @@
 
 #include "arduino.h"
 
-#define WHITELINE_CODE_PIN0       D6
-#define WHITELINE_CODE_PIN1       D7
-#define WHITELINE_CODE_PIN2       D8
+#define WHITELINE_CODE_PIN0       6		// D6
+#define WHITELINE_CODE_PIN1       7		// D7
+#define WHITELINE_CODE_PIN2       8		// D8
 #define OPPONENT_LOCATION_PIN0    A4
 #define OPPONENT_LOCATION_PIN1    A5
-#define INT_WHITELINE_PIN         D5
-#define INT_OPPONENT_SPOTTED_PIN  D4
-#define INT_OPPONENT_NEAR_PIN     D3
+#define INT_WHITELINE_PIN         5		// D5
+#define INT_OPPONENT_SPOTTED_PIN  4		// D4
+#define INT_OPPONENT_NEAR_PIN     3		// D3
 
 #define INT_WHITELINE         0
 #define INT_OPPONENT_SPOTTED  1
