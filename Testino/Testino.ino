@@ -1,10 +1,12 @@
 #include "WhitelineSensorTest.h"
+#include "IRSensorsTest.h"
+#include "InterruptsTest.h'
 #include "FuriosityTest.h"
 
 void setup() {
-	WhitelineSensorTest.init();
+	IRSensors.init();
 }
 
 void loop() {
-	WhitelineSensorTest.loop();
+	IRSensorsTest.loop();
 }
