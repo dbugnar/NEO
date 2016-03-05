@@ -11,7 +11,7 @@ void InterruptsTestClass::init()
   count2 = 0;
 }
 
-void WhitelineSensorTestClass::loop()
+void InterruptsTestClass::loop()
 {
   /************************Get sensor data****************************/
   /*********************Compute control codes*************************/
@@ -78,5 +78,5 @@ void WhitelineSensorTestClass::loop()
     count2 += 3; 
 }
 
-WhitelineSensorTestClass WhitelineSensorTest;
+InterruptsTestClass InterruptsTest;
 
