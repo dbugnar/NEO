@@ -1,15 +1,12 @@
-// 
-// 
-// 
 
 #include "IRSensorsTest.h"
 
-void WhitelineSensorTestClass::init()
+void IRSensorsTestClass::init()
 {
   init_whiteline_array();
 }
 
-void WhitelineSensorTestClass::loop()
+void IRSensorsTestClass::loop()
 {
   get_keyence_array(sensorValues);
   omronValue = get_omron();
