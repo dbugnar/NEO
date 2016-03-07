@@ -37,7 +37,8 @@ void get_keyence_array(int *sensor_values)
 
 int get_omron()
 {
-	return digitalRead(OMRON_PIN);
+	return HIGH;
+	//return digitalRead(OMRON_PIN);
 }
 
 void get_whiteline_array(int *sensor_values)
