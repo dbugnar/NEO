@@ -5,6 +5,7 @@
 #define CENTER 2
 #define DESTROY 3
 #define DIR_CONTROL 4
+#define STOP 5
 
 int current_state = START;
 int next_state = SEARCH;
@@ -106,8 +107,28 @@ void loop() {
 			next_state = DESTROY;
 		}
 		break;
+
+	case STOP:
+		motor_left = DONT_MOVE;
+		motor_right = DONT_MOVE;
+		next_state = STOP;
+		break;
 	}
 
 	//writeMotors(motor_left, motor_right);
 	current_state = next_state;
+}
+
+// TODO attach this ISR to the start/stop module interrup
+// only AFTER the fsm is out of the START state
+void ISR_stop()
+{
+	current_state = STOP;
+}
+
+// TODO attach this ISR to a timer interrupt that will go off
+// after a defined number of seconds (10-20, maybe?)
+void ISR_timeout()
+{
+	current_state = STOP;
 }
